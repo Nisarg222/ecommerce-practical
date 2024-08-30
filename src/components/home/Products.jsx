@@ -29,7 +29,7 @@ const Products = () => {
         .then((result) => {
           let products = [];
           if (Array.isArray(result.payload.products)) {
-            result?.payload?.products.map((product, index) => {
+            result?.payload?.products.map((product) => {
               products.push({
                 id: product.id,
                 img: product.images[0],
@@ -44,9 +44,12 @@ const Products = () => {
             });
             setProducts(products);
           } else {
+            console.log('')
           }
         })
-        .catch((error) => {});
+        .catch((error) => {
+          console.log(error)
+        });
     };
   }, []);
 
