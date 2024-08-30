@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 
-const Back = ({title=''}) => {
+const Back = ({ title = '' }) => {
     const location = useLocation();
     return (
         <>
@@ -12,7 +13,11 @@ const Back = ({title=''}) => {
             </section>
             <div className="margin"></div>
         </>
-    )
-}
+    );
+};
 
-export default Back
+Back.propTypes = {
+    title: PropTypes.string, // Define the expected type of 'title' prop
+};
+
+export default Back;
