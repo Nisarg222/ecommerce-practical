@@ -23,7 +23,7 @@ const Products = () => {
   
 
   useEffect(() => {
-    return async () => {
+    // return async () => {
       let payload = {};
       dispatch(getProducts(payload))
         .then((result) => {
@@ -50,7 +50,7 @@ const Products = () => {
         .catch((error) => {
           console.log(error)
         });
-    };
+    // };
   }, []);
 
   
