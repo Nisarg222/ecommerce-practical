@@ -17,7 +17,6 @@ import Error from '../Error';
 import Contact from '../Contact';
 import Cart from '../Cart';
 import Checkout from '../Checkout';
-import Favorite from '../Favorite'
 
 const Pages = () => {
     return (
