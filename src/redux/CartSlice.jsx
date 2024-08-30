@@ -11,7 +11,7 @@ const initialState = {
 };
 
 const HTTP = axios.create({
-  baseURL: 'https://dummyjson.com/products',
+  baseURL: process.env.REACT_APP_BASE_URL,
   headers: {
     'Content-Type': 'application/json'
   }
